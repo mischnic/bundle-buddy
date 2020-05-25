@@ -55,7 +55,7 @@ class ImportSelector extends Component<{ history: ImportHistory }> {
                 height="36px"
                 className="rollup-logo"
                 alt="webpack logo"
-                src="/img/webpack_logo.png"
+                src={require("url:~/public/img/webpack_logo.png")}
               />
               Webpack / Create React App
             </button>
@@ -75,7 +75,7 @@ class ImportSelector extends Component<{ history: ImportHistory }> {
                 width="34px"
                 height="36px"
                 alt="rollup logo"
-                src="/img/rollup_logo.png"
+                src={require("url:~/public/img/rollup_logo.png")}
                 className="rollup-logo"
               />{" "}
               Rollup
@@ -96,7 +96,7 @@ class ImportSelector extends Component<{ history: ImportHistory }> {
                 width="31px"
                 height="36px"
                 alt="rome logo"
-                src="/img/rome_logo.png"
+                src={require("url:~/public/img/rome_logo.png")}
                 className="rome-logo"
               />{" "}
               Rome
@@ -117,7 +117,7 @@ class ImportSelector extends Component<{ history: ImportHistory }> {
                 width="35px"
                 height="26px"
                 alt="parcel logo"
-                src="/img/parcel_logo.png"
+                src={require("url:~/public/img/parcel_logo.png")}
                 className="parcel-logo"
               />{" "}
               Parcel

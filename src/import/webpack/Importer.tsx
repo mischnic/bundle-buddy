@@ -151,7 +151,7 @@ class WebpackImport extends Component<ImportProps, ImportState> {
                 width="20px"
                 className="attach-icon"
                 alt="attach file"
-                src="/img/attach_icon.svg"
+                src={require("url:~/public/img/attach_icon.svg")}
               />
               stats.json
               <input
@@ -165,8 +165,8 @@ class WebpackImport extends Component<ImportProps, ImportState> {
             <img
               src={
                 this.hasStatsFile(this.state.graphFile)
-                  ? "/img/ok_icon.svg"
-                  : "/img/warn_icon.svg"
+                  ? require("url:~/public/img/ok_icon.svg")
+                  : require("url:~/public/img/warn_icon.svg")
               }
               alt={
                 this.hasStatsFile(this.state.graphFile)
@@ -185,7 +185,7 @@ class WebpackImport extends Component<ImportProps, ImportState> {
                 width="20px"
                 className="attach-icon"
                 alt="attach file"
-                src="/img/attach_icon.svg"
+                src={require("url:~/public/img/attach_icon.svg")}
               />
               sourcemaps
               <input
@@ -200,8 +200,8 @@ class WebpackImport extends Component<ImportProps, ImportState> {
             <img
               src={
                 this.hasSourceMapFile(this.state.sourceMapFiles)
-                  ? "/img/ok_icon.svg"
-                  : "/img/warn_icon.svg"
+                  ? require("url:~/public/img/ok_icon.svg")
+                  : require("url:~/public/img/warn_icon.svg")
               }
               alt={
                 this.hasSourceMapFile(this.state.sourceMapFiles)

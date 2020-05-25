@@ -228,7 +228,7 @@ plugins: [{
                   width="20px"
                   className="attach-icon"
                   alt="attach file"
-                  src="/img/attach_icon.svg"
+                  src={require("url:~/public/img/attach_icon.svg")}
                 />
                 {this.props.graphFileName}
                 <input
@@ -242,8 +242,8 @@ plugins: [{
               <img
                 src={
                   this.hasGraphFile(this.state.graphFile)
-                    ? "/img/ok_icon.svg"
-                    : "/img/warn_icon.svg"
+                    ? require("url:~/public/img/ok_icon.svg")
+                    : require("url:~/public/img/warn_icon.svg")
                 }
                 height="24px"
                 width="24px"
@@ -262,7 +262,7 @@ plugins: [{
                   width="20px"
                   className="attach-icon"
                   alt="attach file"
-                  src="/img/attach_icon.svg"
+                  src={require("url:~/public/img/attach_icon.svg")}
                 />
                 sourcemaps
                 <input
@@ -277,8 +277,8 @@ plugins: [{
               <img
                 src={
                   this.hasSourceMapFile(this.state.sourceMapFiles)
-                    ? "/img/ok_icon.svg"
-                    : "/img/warn_icon.svg"
+                    ? require("url:~/public/img/ok_icon.svg")
+                    : require("url:~/public/img/warn_icon.svg")
                 }
                 height="24px"
                 width="24px"

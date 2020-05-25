@@ -259,7 +259,7 @@ button {
 }
 
 button.copy-button {
-  background-image: url(/img/copy_icon.svg);
+  background-image: url(~/public/img/copy_icon.svg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: none;

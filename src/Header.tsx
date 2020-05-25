@@ -8,7 +8,7 @@ export default function Header() {
       <Link className="header-link flex" to="/">
         <img
           className="logo"
-          src="/icon.png"
+          src={require("url:~/public/icon.png")}
           width="30"
           height="30"
           alt="Bundle Buddy logo"

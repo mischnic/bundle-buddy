@@ -14,7 +14,11 @@ export default function Report(props: Props) {
       </div>
       <div style={{ width: "74vw" }}>
         <p>
-          <img className="icon" alt="directories" src="/img/folder.png" />
+          <img
+            className="icon"
+            alt="directories"
+            src={require("url:~/public/img/folder.png")}
+          />
           <b>
             <small>Duplicate Node Modules</small>
           </b>

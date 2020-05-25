@@ -54,7 +54,11 @@ export default function Analyze(props: Props) {
         </div>
         <div>
           <p>
-            <img className="icon" alt="details" src="/img/details.png" />
+            <img
+              className="icon"
+              alt="details"
+              src={require("url:~/public/img/details.png")}
+            />
             <b>Details</b>
           </p>
           <p>

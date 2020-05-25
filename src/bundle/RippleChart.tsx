@@ -296,7 +296,11 @@ export default function RippleChart(props: Props) {
       <div className="flex baseline">
         <div className="right-spacing">
           <p>
-            <img className="icon" alt="details" src="/img/ripple.png" />
+            <img
+              className="icon"
+              alt="details"
+              src={require("url:~/public/img/ripple.png")}
+            />
             <b>{selected}</b>
           </p>
         </div>

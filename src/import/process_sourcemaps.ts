@@ -1,7 +1,7 @@
 import * as sourceMap from "source-map";
 
 (sourceMap.SourceMapConsumer as any).initialize({
-  "lib/mappings.wasm": "/mappings.wasm"
+  "lib/mappings.wasm": require("url:~/public/mappings.wasm"),
 });
 
 export interface ProcessedSourceMap {
@@ -27,7 +27,7 @@ export function processSourcemap(
 
     if (files[m.source] == null) {
       files[m.source] = {
-        totalBytes: 0
+        totalBytes: 0,
       };
     }
 
@@ -69,7 +69,7 @@ export function processSourcemap(
   }
 
   return new Promise((res, rej) => {
-    sourceMap.SourceMapConsumer.with(contents, null, consumer => {
+    sourceMap.SourceMapConsumer.with(contents, null, (consumer) => {
       const files: ProcessedSourceMap = {};
       const cursor = { line: 1, column: 1 };
       try {
@@ -79,8 +79,8 @@ export function processSourcemap(
         return;
       }
 
-      consumer.eachMapping(m => onMapping(cursor, files, m));
+      consumer.eachMapping((m) => onMapping(cursor, files, m));
       res(files);
-    }).catch(e => rej(e));
+    }).catch((e) => rej(e));
   });
 }

@@ -141,7 +141,11 @@ export default function ByTypeBarChart(props: Props) {
         <div className="sticky-wrapper">
           <div className="sticky">
             <p>
-              <img className="icon" alt="file types" src="/img/file.png" />
+              <img
+                className="icon"
+                alt="file types"
+                src={require("url:~/public/img/file.png")}
+              />
               <b>
                 <small>File Types</small>
               </b>
@@ -155,7 +159,11 @@ export default function ByTypeBarChart(props: Props) {
         <div className="sticky-wrapper">
           <div className="sticky">
             <p>
-              <img className="icon" alt="directories" src="/img/folder.png" />
+              <img
+                className="icon"
+                alt="directories"
+                src={require("url:~/public/img/folder.png")}
+              />
               <b>
                 <small>Directories</small>
               </b>
